@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shravani Fitness</title>
+    <link rel="stylesheet" href="css/style.css">           <!-- linked another css file for styling purpose to it by using link... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        /* CSS Reset */
+        body,html{margin:0px;
+             padding:0px;
+             background-image: url('img.jpg');
+             background-position: center;
+             background-repeat:no-repeat ;
+             background-size: cover;
+             height: 100%;
+             color: white;
+             }
+        .left{border: 0px solid black;
+             text-align: center;
+             display: inline-block;
+             position: absolute;
+             left: 34px;
+             top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+             }
+        .mid{border: 0px solid black; 
+             text-align: center;
+             display:block;
+             width: 39%;
+             padding: 0%;
+             margin:20px auto;
+             background-color: black;
+             border-radius: 100px;
+             
+            }
+        .right{
+             
+             display:inline-block;
+             position: absolute;
+             right: 34px;
+             top: 20px;
+             }
+        .navbar{display: inline-block;
+                padding: 10px;
+                margin: 5px;}
+        .navbar li{display: inline-block;
+                   /* background-color: black; */
+                  
+                   margin: auto;}         
+        .navbar li a{text-decoration: none;
+                    color: white;
+                    padding: 10px 22px;
+                    font-size: large;
+                    font-family: Arial, Helvetica, sans-serif;
+                    
+                 }        
+        .navbar li a:hover,.navbar li a.active{
+                     text-decoration:underline;
+                     color: red;
+                     padding:auto;
+                    }
+        .pic{
+             filter: invert(100%) }
+        .leftdiv{text-align: center;
+                 padding-bottom: 0px;
+                 font-size: small;
+                 line-height: 5px;
+                 font-family: Arial, Helvetica, sans-serif;}
+        .btn{
+             color: white;
+             background-color: black;
+             margin: 3px;
+             font-size:medium;
+             text-decoration: none;
+             border-radius: 50px;
+             font-family: Arial, Helvetica, sans-serif;
+           }
+        .btn:hover,.btn.active{
+                     text-decoration:underline;
+                     color: red;
+                     padding:auto;
+                     text-decoration: underline;}
+        .container{border: 2px solid white;
+                   margin:2px 2px;
+                   padding-top: 30px;
+                   padding-bottom: 60px;
+                   padding-left: 40px;
+                   padding-right: 10px;
+                   width:30%;
+                   margin-top: 100px;
+                   margin-left: 40px;
+                   border-radius: 5px;
+                   text-align: center;
+                   background-color: black;}
+        .formgroup{padding: auto; 
+                    
+                      
+                      border-radius: 10px;
+                      padding top: 20px;
+                      margin-right:40px;
+                      margin-top:25px;
+                      }
+        .join{padding-left:80px;
+              border: 2px soild black;}
+        .btn2{margin-top: 25px;
+            padding: 4px 10px;}
+        .btn1{text-align: center;
+              margin: 6px;
+              padding: 20px 60px;
+              border-radius: 3px;
+              color: black;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        
+        <!-- left for logo -->
+        <div class="left">
+            <img src="logo.png" alt="" class="pic">
+            <div class="leftdiv">Shravani Fitness</div>
+        </div>
+        
+        <!-- mid for navigation bar -->
+        <div class="mid">
+           <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+           </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <div >
+                <button class="btn">Call us now</button>
+                <button class="btn">Email us</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+      <strong class="Join">Join The Best Gym Of Gadhinglaj</strong>
+      <form action="noaction.php">
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Name" class="btn1"><br>
+            <input type="text" name="" placeholder="Enter Your Age" class="btn1"><br>
+            <input type="text" name="" placeholder="Enter Your Gender" class="btn1"><br>
+            <input type="text" name="" placeholder="Enter Your Locality" class="btn1"><br>
+        <button class="btn2">SUBMIT</button>
+        </div>
+      </form> 
+    </div>
+</body>
+</html>
